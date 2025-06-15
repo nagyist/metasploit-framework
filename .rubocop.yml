@@ -113,6 +113,12 @@ Style/DocumentDynamicEvalDefinition:
 Style/EndlessMethod:
   Enabled: true
 
+Style/FormatStringToken:
+  Enabled: true
+  Exclude:
+  # We aren't ready to enable this for modules yet
+    - 'modules/**/*'
+
 Style/HashExcept:
   Enabled: true
 
@@ -150,6 +156,11 @@ Style/RedundantAssignment:
     Disabled as it sometimes improves the readability of code having an explicitly named
     response object, it also makes it easier to put a breakpoint between the assignment
     and return expression
+  Enabled: false
+
+Style/RedundantParentheses:
+  Description: >-
+    Disabled as it sometimes improves the readability of code
   Enabled: false
 
 Style/RedundantRegexpArgument:
